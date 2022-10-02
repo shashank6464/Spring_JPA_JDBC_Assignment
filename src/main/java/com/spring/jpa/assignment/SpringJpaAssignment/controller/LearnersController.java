@@ -18,7 +18,7 @@ public class LearnersController {
     LearnersService learnerService;
 
     @Autowired
-    CoursesService cservice;
+    CoursesService courseService;
 
 
     // save => add learner
@@ -61,9 +61,7 @@ public class LearnersController {
     @PutMapping("/{learner_id}/courses/{course_id}")
     public Learners assignDetails(@PathVariable int learner_id, @PathVariable int course_id) {
 
-        Courses course = cservice.getCourseById(course_id);
-
-        //System.out.println(course);
+        Courses course = courseService.getCourseById(course_id);
         return learnerService.assignCourse(learner_id, course);
     }
 
