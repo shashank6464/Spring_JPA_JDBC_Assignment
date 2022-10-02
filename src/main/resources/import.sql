@@ -5,5 +5,8 @@ INSERT INTO Learners(learner_id, learner_first_name, learner_last_name, learner_
 INSERT INTO Learners(learner_id, learner_first_name, learner_last_name, learner_email, learner_password, course_id) VALUES(5, 'John','Ramos','john01@gmail.com','john456', null);
 INSERT INTO Learners(learner_id, learner_first_name, learner_last_name, learner_email, learner_password, course_id) VALUES(6, 'Raj','Singh','rajsingh@gmail.com','singh123', null);
 
+INSERT INTO Courses(course_id,course_name,course_description) VALUES(1,'Course1', 'Course_One')
+INSERT INTO Courses(course_id,course_name,course_description) VALUES(2,'Course2', 'Course_Two')
+INSERT INTO Courses(course_id,course_name,course_description) VALUES(3,'Course3', 'Course_Three')
 
 
