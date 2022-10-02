@@ -66,7 +66,7 @@ public class LearnersController {
     }
 
 
-    // Additional Queries -->
+    // ------- Additional Queries -->
 
     @RequestMapping("/findByEmailAddressAndLastname")
     public List<Learners> findByEmailAddressAndLastname(@RequestBody Map<String, Object> fields) {
